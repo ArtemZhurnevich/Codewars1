@@ -76,8 +76,20 @@ function reverseWords(str){
   return str.split(' ').reverse().join(' '); // reverse those words
 }
 
+// Given a number n, return the number of positive odd numbers below n, EASY!
+function oddCount(n) {
+  return Math.floor(n/2)}
 
-
+  // второе решение
+  function oddCount(n) {
+    const newArr = [];
+  
+     for (let i = 0; i < n; i++) {
+       if (i % 2 !== 0) {
+        newArr.push(i);
+      } 
+     }
+   return newArr.length; }
 
 
 
