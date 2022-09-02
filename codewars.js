@@ -138,6 +138,52 @@ function oddCount(n) {
 
 
 
+  // Safen User Input Part I - htmlspecialchars
+  // первое решение неправильное было из за ифов простых
+  function htmlspecialchars(formData) {
+    let result = '';
+    for (i=0; i<formData.length; i++){
+      if (formData[i] === '>') {
+       result = result + '&gt;'
+      }
+      if (formData[i] === '<') {
+        result = result + '&lt;'
+      }
+      if (formData[i] === "''") {
+       result = result + '&quot;'
+      }
+      if (formData[i] === '&') {
+        result = result + '&amp;'
+      } else result = result + formData[i];
+      return result
+    }
+      
+  }
+
+  function htmlspecialchars(formData) {
+    let result = '';
+    for (i=0; i<formData.length; i++){
+      if (formData[i] === '>') {
+       result = result + '&gt;'
+      }
+     else if (formData[i] === '<') {
+        result = result + '&lt;'
+      }
+     else if (formData[i] === '"') {
+       result = result + '&quot;'
+      }
+      else if (formData[i] === '&') {
+        result = result + '&amp;'
+      } 
+      else result = result + formData[i];
+      
+    }
+      return result;
+  }
+
+
+
+
 //ЗАДАЧИ ЭДГАРА
 
 function countDevelopers(list) {
