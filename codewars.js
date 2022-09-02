@@ -126,8 +126,14 @@ function oddCount(n) {
     return Math.abs(dadYearsOld - 2 * sonYearsOld);
   }
 
-
-
+  // Beginner - Reduce but Grow
+  function grow(x){
+    let result = 1;
+    for (i=0; x.length > i; i++){
+     result = result  * x[i];
+    }
+    return result
+  }
 
 
 
