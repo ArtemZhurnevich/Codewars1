@@ -121,6 +121,11 @@ function oddCount(n) {
     return s[s.length-1] == '!' ? s.slice(0, s.length-1) : s;
   }
 
+  // Twice as old
+  function twiceAsOld(dadYearsOld, sonYearsOld) {
+    return Math.abs(dadYearsOld - 2 * sonYearsOld);
+  }
+
 
 
 
