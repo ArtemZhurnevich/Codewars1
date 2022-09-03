@@ -181,6 +181,15 @@ function oddCount(n) {
       return result;
   }
 
+  // For Twins: 1. Types
+  function typeValidation(variable, type) {
+    if (typeof variable === type) {
+      return true
+    } else return false;
+  }
+
+  
+
 
 
 
